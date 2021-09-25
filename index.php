@@ -84,6 +84,82 @@
                 </div>
             </div>
         </div>
+        <div class="container__loan">
+            <div class="container__loan__info">
+                <h1 class="title">Para solicitar un préstamo sólo necesitas</h1>
+                <pre class="description">
+                    Contar con un inmueble en el departamento 
+                    de La Libertad que esté inscrito en SUNARP
+                </pre>
+                <div class="check">
+                    <ul class="check__ul">
+                        <li class="item">
+                            <a class="shape">Copia de tu DNI y de los dueños del inmueble.</a>
+                        </li>
+                        <li class="item">
+                            <a class="shape">Sustento de tus ingresos en los últimos meses.</a>
+                        </li>
+                        <li class="item">
+                            <a class="shape">Copia del recibo de luz o agua de tu vivienda actual.</a>
+                        </li>
+                        <li class="item">
+                            <a class="shape">Copia literal actualizada del inmueble.</a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="shape">Hoja de Resumen y Predio Urbano del inmueble.</a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="shape">Copia de recibo de luz o agua del inmueble.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container__loan__button">
+                <button class="btn">Registra tu solicitud de préstamo aquí</button>
+            </div>
+        </div>
+        <div class="container__loan">
+            <div class="container__loan__info">
+                <h1 class="title">Invierte con nosotros</h1>
+                <pre class="description">
+                    Ponemos en tus manos las mejores
+                    oportunidades de inversión
+                </pre>
+                <div class="check">
+                    <ul class="check__ul">
+                        <li class="item">
+                            <a class="shape">Las solicitudes de préstamo pasan por una evaluación financiera y legal.</a>
+                        </li>
+                        <li class="item">
+                            <a class="shape">El préstamo es directo entre las partes. Nexocash gestiona todo el proceso financiero y legal del préstamo.</a>
+                        </li>
+                        <li class="item">
+                            <a class="shape">Se invierte el total del monto del préstamo. El mínimo es S/20,000 con plazos desde 1 año hasta 4 años.</a>
+                        </li>
+                        <li class="item">
+                            <a class="shape">
+                                La operación tiene garantia hipotecaria y se realiza vía notarial a
+                                través de una escritura pública o título de crédito hipotecario negociable TCHN,
+                                haciendo tu inversión más segura.
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a class="shape">
+                                Se incluye dentro de la tasa ofrecida al prestatario un porcentaje
+                                que cubre un seguro inmobilario, misma que reduce el riesgo de in-
+                                versión frente a factores externos.
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a class="shape">La Ley favorece  y protege el Titulo de credito hipotecaro negociable.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container__loan__button">
+                <button class="btn">Registrate como inversionista aquí</button>
+            </div>
+        </div>
     </div>
 </body>
 
