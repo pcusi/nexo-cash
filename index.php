@@ -41,6 +41,49 @@
                 <img src="./public/assets/img/nexo_cash_sales.png" class="sales__img">
             </div>
         </div>
+        <div class="container__us">
+            <img src="public/assets/img/nexo_cash_logo.png" class="img">
+            <pre class="title">
+                Somos el nexo que conecta a personas emprendedoras como tú con inversionistas
+                interesados en darte el financiamiento que necesitas. Te guiamos y asesoramos
+                para establecer un préstamo seguro a través de un título de crédito hipotecario
+                (cualquier tipo de inmueble en la provincia de La Libertad).
+            </pre>
+            <div class="container__us__grid">
+                <div class="item">
+                    <img src="public/assets/img/nexo_cash_connectivity.png" class="item__img">
+                    <h1 class="item__title">Conectividad</h1>
+                    <pre class="item__description">
+                        Te conectamos con
+                        personas interesadas
+                        en invertir o que
+                        buscan financiamiento.
+                    </pre>
+                </div>
+                <div class="item">
+                    <img src="public/assets/img/nexo_cash_session.png" class="item__img">
+                    <h1 class="item__title">Asesoramiento</h1>
+                    <pre class="item__description">
+                        Te asesoramos financie-
+                        ra y legalmente, prepa-
+                        rando y presentando tu
+                        propuesta juntos hasta el
+                        final.
+                    </pre>
+                </div>
+                <div class="item">
+                    <img src="public/assets/img/nexo_cash_gesture.png" class="item__img">
+                    <h1 class="item__title">Gestión</h1>
+                    <pre class="item__description">
+                        Nos encargamos de los 
+                        documentos legales ne-
+                        cesarios para concretar
+                        tu préstamo o inversión
+                        de la forma más segura.
+                    </pre>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
