@@ -151,13 +151,79 @@
                             </a>
                         </li>
                         <li class="item">
-                            <a class="shape">La Ley favorece  y protege el Titulo de credito hipotecaro negociable.</a>
+                            <a class="shape">La Ley favorece y protege el Titulo de credito hipotecaro negociable.</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="container__loan__button">
                 <button class="btn">Registrate como inversionista aquí</button>
+            </div>
+        </div>
+        <div class="container__benefit">
+            <div class="container__benefit__img">
+                <img src="./public/assets/img/nexo_cash_sales.png" class="benefit__img">
+            </div>
+            <div class="container__benefit__info">
+                <h1 class="title">
+                    Beneficios
+                </h1>
+                <pre class="description">
+                    Conoce los beneficios que ganas al gestionar 
+                    tus préstamos o inversiones con nosotros
+                </pre>
+                <div class="container__benefit__info__grid">
+                    <div class="thumb">
+                        <div class="thumb__circle">
+                            <span>1</span>
+                        </div>
+                        <div class="thumb__separator"></div>
+                        <div class="thumb__title">
+                            Toda inversión es
+                            segura, respaldada por
+                            una garantía hipotecaria,
+                            que a su vez tambien
+                            cuenta con un seguro
+                            inmobiliario.
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <div class="thumb__circle">
+                            <span>2</span>
+                        </div>
+                        <div class="thumb__separator"></div>
+                        <div class="thumb__title">
+                            Todo el proceso se 
+                            realiza con asistencia 
+                            y asesoramiento 
+                            financiero y legal.
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <div class="thumb__circle">
+                            <span>3</span>
+                        </div>
+                        <div class="thumb__separator"></div>
+                        <div class="thumb__title">
+                            El asesoramiento es 
+                            personalizado y busca 
+                            el beneficio de ambas 
+                            partes.
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <div class="thumb__circle">
+                            <span>4</span>
+                        </div>
+                        <div class="thumb__separator"></div>
+                        <div class="thumb__title">
+                            Somos flexibles: se 
+                            acuerdan las tasas y 
+                            cronogramas de pago 
+                            a medida.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

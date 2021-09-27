@@ -60,23 +60,38 @@ body {
           justify-content: space-between;
 }
 
+.header__brand .img {
+  width: 300px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .header__ul {
   width: 50%;
   background: #7fcaaf;
-  border-radius: 0 0 0 80px;
+  border-radius: 0 0 0 200px;
   padding: 32px;
   list-style-type: none;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header__ul .item {
+  width: 20%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   display: inline-block;
   margin-right: 24px;
-}
-
-.header__ul .item:last-child {
-  margin-right: 0;
 }
 
 .header__ul .item .link {
@@ -84,6 +99,7 @@ body {
   font-size: 1.8em;
   text-decoration: none;
   font-family: "Poppins-Regular", sans-serif;
+  cursor: pointer;
 }
 
 .container {
@@ -265,7 +281,7 @@ body {
 }
 
 .container__loan__info {
-  width: 50%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,7 +349,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 50%;
+  width: 40%;
 }
 
 .container__loan__button .btn {
@@ -345,7 +361,7 @@ body {
   padding: 16px 32px;
   font-size: 1.6em;
   word-wrap: break-word;
-  width: 40%;
+  width: 60%;
   border-radius: 50px;
   border: #fff;
   cursor: pointer;
@@ -353,6 +369,122 @@ body {
      -moz-text-size-adjust: auto;
       -ms-text-size-adjust: auto;
           text-size-adjust: auto;
+}
+
+.container__benefit {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+  padding: 120px;
+  margin: 0 -120px;
+  background: #EDF6F3;
+}
+
+.container__benefit__img {
+  width: 60%;
+}
+
+.container__benefit__img .sales__img {
+  width: 600px;
+  height: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
+.container__benefit__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40%;
+}
+
+.container__benefit__info .title {
+  font-size: 4em;
+  color: #1B2127;
+  text-transform: uppercase;
+  font-family: "Poppins-Medium", sans-serif;
+}
+
+.container__benefit__info .description {
+  font-size: 1.6em;
+  color: #939393;
+  font-family: "Poppins-Light", sans-serif;
+  word-wrap: break-word;
+  white-space: normal;
+  margin-bottom: 80px;
+}
+
+.container__benefit__info__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid: 20px;
+}
+
+.container__benefit__info__grid .thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.container__benefit__info__grid .thumb__circle {
+  width: 25%;
+  background: #C65DFF;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__benefit__info__grid .thumb__circle span {
+  color: #fff;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 2.3em;
+}
+
+.container__benefit__info__grid .thumb__separator {
+  width: 5%;
+}
+
+.container__benefit__info__grid .thumb__title {
+  width: 70%;
+  font-family: "Poppins-Light", sans-serif;
+  font-size: 1.3em;
+  color: #939393;
 }
 
 /* escritorio 2k */
