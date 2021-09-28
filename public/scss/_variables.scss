@@ -1,48 +1,47 @@
 @font-face {
-    font-family: 'Poppins-Light';
-    src: url('../assets/fonts/Poppins-Light.ttf');
+    font-family: 'Gotham';
+    src: url('../assets/fonts/Gotham.ttf');
+    font-weight: 400
 }
 
 @font-face {
-    font-family: 'Poppins-Regular';
-    src: url('../assets/fonts/Poppins-Regular.ttf');
+    font-family: 'Ghotic';
+    src: url('../assets/fonts/Gothic.ttf');
     font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Poppins-Medium';
-    src: url('../assets/fonts/Poppins-Medium.ttf');
+    font-family: 'Ghotic-Medium';
+    src: url('../assets/fonts/Gothic-Medium.ttf');
     font-weight: 500;
 }
 
 @font-face {
-    font-family: 'Poppins-SemiBold';
-    src: url('../assets/fonts/Poppins-SemiBold.ttf');
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: 'Poppins-Bold';
-    src: url('../assets/fonts/Poppins-Bold.ttf');
+    font-family: 'Ghotic-Bold';
+    src: url('../assets/fonts/Ghotic-Bold.ttf');
     font-weight: 700;
 }
 
 @font-face {
+    font-family: 'Myriad';
+    src: url('../assets/fonts/Myriad.otf');
+    font-weight: 400;
+}
+
+@font-face {
     font-family: 'Nura-Medium';
-    src: url('../assets/fonts/Nura-Medium.ttf');
+    src: url('../assets/fonts/Nura-Medium.otf');
     font-weight: 500;
 }
 
-$poppins: 'Poppins-Regular', sans-serif;
-$poppins-l: 'Poppins-Light', sans-serif;
-$poppins-m: 'Poppins-Medium', sans-serif;
-$poppins-sm: 'Poppins-SemiBold', sans-serif;
-$poppins-b: 'Poppins-Bold', sans-serif;
-
-$nura-m: 'Nura-Medium', sans-serif;
-
 $blackText: #1B2127;
 $grayText: #939393;
-$greenPrimary: #7fcaaf;
+$greenPrimary: #49B48E;
 $greenCake: #EDF6F3;
 $pinkColor: #C65DFF;
+$gotham: 'Gotham';
+$gothic-b: 'Ghotic-Bold';
+$gothic: 'Ghotic';
+$gothic-m: 'Ghotic-Medium';
+$myriad: 'Myriad';
+$nura-m: 'Nura-Medium';
