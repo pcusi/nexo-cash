@@ -11,7 +11,8 @@
 
 <body>
     <?php require_once('./shared/header.php'); ?>
-    <div class="container">
+    <div class="container" id="collapse-container">
+        <!-- region invierte !-->
         <div class="container__investment">
             <div class="container__investment__info">
                 <h1 class="title">
@@ -20,12 +21,15 @@
                 <div class="check">
                     <ul class="check__ul">
                         <li class="item">
+                            <span class="check-img"></span>
                             <a class="shape">Fácil</a>
                         </li>
                         <li class="item">
+                            <span class="check-img"></span>
                             <a class="shape">Rápida</a>
                         </li>
                         <li class="item">
+                            <span class="check-img"></span>
                             <a class="shape">Segura</a>
                         </li>
                     </ul>
@@ -41,8 +45,10 @@
                 <img src="./public/assets/img/nexo_cash_sales.png" class="sales__img">
             </div>
         </div>
+        <!-- end invierte !-->
+        <!-- region nosotros !-->
         <div class="container__us">
-            <img src="public/assets/img/nexo_cash_logo.png" class="img">
+            <img src="public/assets/img/nexo_cash_logo_horizontal.png" class="img">
             <pre class="title">
                 Somos el nexo que conecta a personas emprendedoras como tú con inversionistas
                 interesados en darte el financiamiento que necesitas. Te guiamos y asesoramos
@@ -84,6 +90,8 @@
                 </div>
             </div>
         </div>
+        <!-- end nosotros !-->
+        <!-- region préstamo !-->
         <div class="container__loan">
             <div class="container__loan__info">
                 <h1 class="title">Para solicitar un préstamo sólo necesitas</h1>
@@ -94,22 +102,28 @@
                 <div class="check">
                     <ul class="check__ul">
                         <li class="item">
+                            <span class="check-img"></span>
                             <a class="shape">Copia de tu DNI y de los dueños del inmueble.</a>
                         </li>
                         <li class="item">
+                            <span class="check-img"></span>
                             <a class="shape">Sustento de tus ingresos en los últimos meses.</a>
                         </li>
                         <li class="item">
+                            <span class="check-img"></span>
                             <a class="shape">Copia del recibo de luz o agua de tu vivienda actual.</a>
                         </li>
                         <li class="item">
+                            <span class="check-img"></span>
                             <a class="shape">Copia literal actualizada del inmueble.</a>
                         </li>
                         <li class="item">
-                            <a href="" class="shape">Hoja de Resumen y Predio Urbano del inmueble.</a>
+                            <span class="check-img"></span>
+                            <a class="shape">Hoja de Resumen y Predio Urbano del inmueble.</a>
                         </li>
                         <li class="item">
-                            <a href="" class="shape">Copia de recibo de luz o agua del inmueble.</a>
+                            <span class="check-img"></span>
+                            <a class="shape">Copia de recibo de luz o agua del inmueble.</a>
                         </li>
                     </ul>
                 </div>
@@ -118,6 +132,105 @@
                 <button class="btn">Registra tu solicitud de préstamo aquí</button>
             </div>
         </div>
+        <!-- end préstamo !-->
+        <!-- region pasos !-->
+        <div class="container__step">
+            <img src="public/assets/img/nexo_cash_vector_step.svg" class="vector">
+            <div class="line"></div>
+            <div class="container__step__number">
+                <div class="container__step__number__grid">
+                    <div class="thumb">
+                        <div class="thumb__top">
+                            <img src="public/assets/img/nexo_cash_step_one.png" class="thumb__top__img">
+                            <p class="thumb__top__title">
+                                Presentación de documentos y comisión para
+                                la inspección y tasación
+                                de la propiedad.
+                            </p>
+                            <div class="thumb__top__triangle"></div>
+                        </div>
+                        <div class="thumb__circle">
+                            <span>1</span>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <div class="thumb__circle">
+                            <span>2</span>
+                        </div>
+                        <div class="thumb__bottom">
+                            <img src="public/assets/img/nexo_cash_step_two.png" class="thumb__bottom__img">
+                            <p class="thumb__bottom__title">
+                                Presentación de documentos y comisión para
+                                la inspección y tasación
+                                de la propiedad.
+                            </p>
+                            <div class="thumb__bottom__triangle"></div>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <div class="thumb__top">
+                            <img src="public/assets/img/nexo_cash_step_three.png" class="thumb__top__img">
+                            <p class="thumb__top__title">
+                                Se coordina la reunión entre ambas partes:
+                                solicitante e inversionista, quien tiene un plazo
+                                max. de 2 días para determinar
+                                su respuesta.
+                            </p>
+                            <div class="thumb__top__triangle"></div>
+                        </div>
+                        <div class="thumb__circle">
+                            <span>3</span>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <div class="thumb__circle">
+                            <span>4</span>
+                        </div>
+                        <div class="thumb__bottom">
+                            <img src="public/assets/img/nexo_cash_step_four.png" class="thumb__bottom__img">
+                            <p class="thumb__bottom__title">
+                                Se informa si la solicitud de
+                                financiamiento fue a probada
+                                por el inversionista y se firma
+                                el primer contrato de inscripción hipotecaria.
+                            </p>
+                            <div class="thumb__bottom__triangle"></div>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <div class="thumb__top">
+                            <img src="public/assets/img/nexo_cash_step_five.png" class="thumb__top__img">
+                            <p class="thumb__top__title">
+                                Se comienza con el proceso de
+                                inscripción de
+                                los Registros Públicos.
+                            </p>
+                            <div class="thumb__top__triangle"></div>
+                        </div>
+                        <div class="thumb__circle">
+                            <span>5</span>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <div class="thumb__circle">
+                            <span>6</span>
+                        </div>
+                        <div class="thumb__bottom">
+                            <img src="public/assets/img/nexo_cash_step_six.png" class="thumb__bottom__img">
+                            <p class="thumb__bottom__title">
+                                Finalmente, se realiza la
+                                firma de la escritura y se
+                                procede al desembolso
+                                directo.
+                            </p>
+                            <div class="thumb__bottom__triangle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end pasos !-->
+        <!-- region invertir !-->
         <div class="container__loan">
             <div class="container__loan__info">
                 <h1 class="title">Invierte con nosotros</h1>
@@ -128,15 +241,19 @@
                 <div class="check">
                     <ul class="check__ul">
                         <li class="item">
+                            <span class="check-img"></span>
                             <a class="shape">Las solicitudes de préstamo pasan por una evaluación financiera y legal.</a>
                         </li>
                         <li class="item">
+                            <span class="check-img"></span>
                             <a class="shape">El préstamo es directo entre las partes. Nexocash gestiona todo el proceso financiero y legal del préstamo.</a>
                         </li>
                         <li class="item">
+                            <span class="check-img"></span>
                             <a class="shape">Se invierte el total del monto del préstamo. El mínimo es S/20,000 con plazos desde 1 año hasta 4 años.</a>
                         </li>
                         <li class="item">
+                            <span class="check-img"></span>
                             <a class="shape">
                                 La operación tiene garantia hipotecaria y se realiza vía notarial a
                                 través de una escritura pública o título de crédito hipotecario negociable TCHN,
@@ -144,6 +261,7 @@
                             </a>
                         </li>
                         <li class="item">
+                            <span class="check-img"></span>
                             <a class="shape">
                                 Se incluye dentro de la tasa ofrecida al prestatario un porcentaje
                                 que cubre un seguro inmobilario, misma que reduce el riesgo de in-
@@ -151,6 +269,7 @@
                             </a>
                         </li>
                         <li class="item">
+                            <span class="check-img"></span>
                             <a class="shape">La Ley favorece y protege el Titulo de credito hipotecaro negociable.</a>
                         </li>
                     </ul>
@@ -160,9 +279,11 @@
                 <button class="btn">Registrate como inversionista aquí</button>
             </div>
         </div>
+        <!-- end region !-->
+        <!-- region beneficio !-->
         <div class="container__benefit">
             <div class="container__benefit__img">
-                <img src="./public/assets/img/nexo_cash_sales.png" class="benefit__img">
+                <img src="./public/assets/img/nexo_cash_benefit.png" class="benefit__img">
             </div>
             <div class="container__benefit__info">
                 <h1 class="title">
@@ -193,9 +314,9 @@
                         </div>
                         <div class="thumb__separator"></div>
                         <div class="thumb__title">
-                            Todo el proceso se 
-                            realiza con asistencia 
-                            y asesoramiento 
+                            Todo el proceso se
+                            realiza con asistencia
+                            y asesoramiento
                             financiero y legal.
                         </div>
                     </div>
@@ -205,9 +326,9 @@
                         </div>
                         <div class="thumb__separator"></div>
                         <div class="thumb__title">
-                            El asesoramiento es 
-                            personalizado y busca 
-                            el beneficio de ambas 
+                            El asesoramiento es
+                            personalizado y busca
+                            el beneficio de ambas
                             partes.
                         </div>
                     </div>
@@ -217,16 +338,19 @@
                         </div>
                         <div class="thumb__separator"></div>
                         <div class="thumb__title">
-                            Somos flexibles: se 
-                            acuerdan las tasas y 
-                            cronogramas de pago 
+                            Somos flexibles: se
+                            acuerdan las tasas y
+                            cronogramas de pago
                             a medida.
                         </div>
                     </div>
                 </div>
             </div>
+            <img src="public/assets/img/nexo_cash_vector.svg" class="second-vector">
         </div>
+        <!-- end beneficio !-->
     </div>
 </body>
 
 </html>
+<script src="public/js/nexo.js"></script>
