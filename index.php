@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <?php require_once('./shared/header.php'); ?>
+    <?php include_once('./shared/header.php'); ?>
     <div class="container" id="collapse-container">
         <!-- region invierte !-->
         <div class="container__investment">
@@ -135,7 +135,7 @@
         <!-- end préstamo !-->
         <!-- region pasos !-->
         <div class="container__step">
-            <img src="public/assets/img/nexo_cash_vector_step.svg" class="vector">
+            <img src="public/assets/img/nexo_cash_step.png" class="vector">
             <div class="line"></div>
             <div class="container__step__number">
                 <div class="container__step__number__grid">
@@ -349,7 +349,57 @@
             <img src="public/assets/img/nexo_cash_vector.svg" class="second-vector">
         </div>
         <!-- end beneficio !-->
+        <!-- region preguntas !-->
+        <div class="container__question">
+            <div class="container__question__info">
+                <h1 class="title">¿Tienes preguntas?</h1>
+                <p class="description">Aquí puedes conocer más sobre el tema</p>
+                <div class="accordion">
+                    <div class="accordion__action">
+                        <p class="accordion__action__title">
+                            ¿Qué es un titulo de crédito hipotecario negociable?
+                        </p>
+                        <div class="accordion__action__arrow"></div>
+                    </div>
+                    <div class="accordion__panel"></div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__action">
+                        <p class="accordion__action__title">
+                            ¿Qué tipo de inmuebles aplican para solicitar un préstamo?
+                        </p>
+                        <div class="accordion__action__arrow"></div>
+                    </div>
+                    <div class="accordion__panel"></div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__action">
+                        <p class="accordion__action__title">
+                            ¿Qué tasas de interés manejamos?
+                        </p>
+                        <div class="accordion__action__arrow"></div>
+                    </div>
+                    <div class="accordion__panel"></div>
+                </div>
+                <div class="accordion">
+                <div class="accordion__action">
+                        <p class="accordion__action__title">
+                            ¿Cuál es el monto mínimo de inversión?
+                        </p>
+                        <div class="accordion__action__arrow"></div>
+                    </div>
+                    <div class="accordion__panel"></div>
+                </div>
+            </div>
+            <div class="container__question__img">
+                <img src="public/assets/img/nexo_cash_contact.png" class="img">
+                <p class="title">¿Tienes más preguntas?</p>
+                <span class="description">Abre el chat de atención <a href="#" class="link">aquí</a></span>
+            </div>
+        </div>
+        <!-- end region !-->
     </div>
+    <?php include_once('./shared/footer.php'); ?>
 </body>
 
 </html>
