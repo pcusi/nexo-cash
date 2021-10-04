@@ -351,45 +351,9 @@
         <!-- end beneficio !-->
         <!-- region preguntas !-->
         <div class="container__question">
-            <div class="container__question__info">
+            <div class="container__question__info" id="question-info">
                 <h1 class="title">¿Tienes preguntas?</h1>
                 <p class="description">Aquí puedes conocer más sobre el tema</p>
-                <div class="accordion">
-                    <div class="accordion__action">
-                        <p class="accordion__action__title">
-                            ¿Qué es un titulo de crédito hipotecario negociable?
-                        </p>
-                        <div class="accordion__action__arrow"></div>
-                    </div>
-                    <div class="accordion__panel"></div>
-                </div>
-                <div class="accordion">
-                    <div class="accordion__action">
-                        <p class="accordion__action__title">
-                            ¿Qué tipo de inmuebles aplican para solicitar un préstamo?
-                        </p>
-                        <div class="accordion__action__arrow"></div>
-                    </div>
-                    <div class="accordion__panel"></div>
-                </div>
-                <div class="accordion">
-                    <div class="accordion__action">
-                        <p class="accordion__action__title">
-                            ¿Qué tasas de interés manejamos?
-                        </p>
-                        <div class="accordion__action__arrow"></div>
-                    </div>
-                    <div class="accordion__panel"></div>
-                </div>
-                <div class="accordion">
-                <div class="accordion__action">
-                        <p class="accordion__action__title">
-                            ¿Cuál es el monto mínimo de inversión?
-                        </p>
-                        <div class="accordion__action__arrow"></div>
-                    </div>
-                    <div class="accordion__panel"></div>
-                </div>
             </div>
             <div class="container__question__img">
                 <img src="public/assets/img/nexo_cash_contact.png" class="img">
