@@ -62,22 +62,37 @@ body {
             z-index: 1;
         }
         .item {
+            position: relative;
             z-index: 5;
             width: 20%;
             align-self: center;
             display: inline-block;
             margin-right: 24px;
-            .link {
+            cursor: pointer;
+            &-link {
                 color: #fff;
                 font-size: 1.8em;
+                line-height: 28px;
                 text-decoration: none;
                 font-family: $gotham;
-                cursor: pointer;
+                display: block;
             }
         }
     }
     &__collapse {
         display: none;
+    }
+}
+
+.header__simple {
+    width: 100%;
+    background: $greenPrimary;
+    height: auto;
+    .img-white {
+        display: block;
+        width: 250px;
+        height: 100px;
+        object-fit: cover;
     }
 }
 
@@ -424,6 +439,8 @@ body {
                 border: #fff;
                 cursor: pointer;
                 text-size-adjust: auto;
+                text-align: center;
+                text-decoration: none;
             }
         }
     }
@@ -588,6 +605,7 @@ body {
                     display: none;
                     margin-top: 20px;
                     overflow: hidden;
+                    transition: height 600ms ease-out;
                     &__description {
                         color: $grayText;
                         font-size: 1.6em;
@@ -631,6 +649,302 @@ body {
                 text-decoration: underline;
                 cursor: pointer;
             }
+        }
+    }
+    &__form {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 40px;
+        padding: 32px 120px;
+        .container__tax {
+            position: relative;
+            width: 20%;
+            height: 350px;
+            border: 1px solid $borderGray;
+            padding: 32px;
+            border-radius: 16px;
+            .title {
+                font-size: 1em;
+                font-family: $gotham;
+                line-height: 17px;
+                margin-bottom: 12px;
+                color: $blackText;
+            }
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 12px;
+                .input-label {
+                    font-size: 1em;
+                    font-family: $gothic;
+                    line-height: 17px;
+                    color: $blackText;
+                }
+                .input-select {
+                    width: 100%;
+                    height: 40px;
+                    border: 1px solid $borderGray;
+                    &-option {
+                        font-family: $gothic;
+                        font-family: 1.5em;
+                        color: $blackText;
+                        line-height: 17px;
+                    }
+                }
+            }
+            .tax-title {
+                font-size: 1em;
+                font-family: $gotham;
+                line-height: 17px;
+                color: $blackText;
+            }
+            .tax-price {
+                font-size: 1.5em;
+                font-family: $gothic-b;
+                line-height: 17px;
+                color: $blackText;
+                margin-bottom: 20px;
+            }
+            &__month {
+                background: $greenCake;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: auto;
+                height: 40px;
+                padding: 8px;
+                .tax-month {
+                    font-size: 1em;
+                    font-family: $gothic;
+                    line-height: 18px;
+                    color: $blackText;
+                }
+                .interes {
+                    font-weight: $gothic-b;
+                }
+            }
+            .btn {
+                border: none;
+                width: 100%;
+                background: $greenPrimary;
+                color: #fff;
+                border-radius: 8px;
+                padding: 8px;
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+        }
+        .container__contact {
+            position: relative;
+            width: 80%;
+            height: 840px;
+            border: 1px solid $borderGray;
+            border-radius: 16px;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            .title {
+                font-size: 2em;
+                font-family: $gothic-b;
+                line-height: 28px;
+                color: $blackText;
+                text-align: left;
+            }
+            .form {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                margin-bottom: 20px;
+                .item {
+                    width: 100%;
+                    height: 150px;
+                    padding-top: 20px;
+                    .form-group {
+                        display: flex;
+                        flex-direction: column;
+                        .input-label {
+                            font-size: 1.1em;
+                            font-family: $gothic;
+                            line-height: 17px;
+                            margin-bottom: 4px;
+                            color: $blackText;
+                        }
+                        .input-select {
+                            width: 100%;
+                            height: 56px;
+                            border: 1px solid $borderGray;
+                            &-option {
+                                font-family: $gothic;
+                                font-family: 1.5em;
+                                color: $blackText;
+                                line-height: 17px;
+                            }
+                            &:focus {
+                                border: 1px solid $greenPrimary;
+                            }
+                        }
+                        .input-text {
+                            width: 100%;
+                            height: 56px;
+                            border: 1px solid $borderGray;
+                            padding: 0 8px;
+                            &:focus {
+                                border: 1px solid $greenPrimary;
+                            }
+                        }
+                        .select-text {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            gap: 20px;
+                            .input-select-wrap {
+                                width: 30%;
+                                height: 56px;
+                                border: 1px solid $borderGray;
+                                padding: 0 2px;
+                            }
+                            .input-text-wrap {
+                                width: 70%;
+                                height: 56px;
+                                border: 1px solid $borderGray;
+                                padding: 0 8px;
+                            }
+                        }
+                        small {
+                            width: 100%;
+                            font-size: 1em;
+                            color: $footerText;
+                            font-family: $gothic;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+            .btn {
+                border: none;
+                width: 20%;
+                display: block;
+                margin: 0 auto;
+                background: $greenPrimary;
+                color: #fff;
+                border-radius: 8px;
+                padding: 8px;
+                font-size: 1.5em;
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+    &__inversion {
+        position: relative;
+        padding: 120px;
+        width: 100%;
+        height: 70vh;
+        &__form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 40%;
+            height: 500px;
+            border: 1px solid $borderGray;
+            padding: 32px;
+            border-radius: 16px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            .item {
+                width: 100%;
+                margin-bottom: 40px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .title {
+                    font-size: 1em;
+                    font-family: $gotham;
+                    line-height: 17px;
+                    margin-bottom: 12px;
+                    color: $blackText;   
+                }
+                .form-group {
+                    display: flex;
+                    flex-direction: column;
+                    .input-label {
+                        font-size: 1.1em;
+                        font-family: $gothic;
+                        line-height: 17px;
+                        margin-bottom: 4px;
+                        color: $blackText;
+                    }
+                    .input-text {
+                        width: 100%;
+                        height: 56px;
+                        border: 1px solid $borderGray;
+                        padding: 0 8px;
+                        &:focus {
+                            border: 1px solid $greenPrimary;
+                        }
+                    }
+                }
+            }
+        }
+        .btn {
+            position: absolute;
+            bottom: 13%;
+            border: none;
+            width: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: $greenPrimary;
+            color: #fff;
+            border-radius: 8px;
+            padding: 8px;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+    }
+    .toast {
+        visibility: hidden;
+        position: absolute;
+        width: 25%;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 12px;
+        background: $greenPrimary;
+        padding: 32px;
+        color: #fff;
+        transition: all 600ms;
+        &__title {
+            font-size: 1.5em;
+            font-family: $gothic;
+        }
+        &__title-bold {
+            font-family: $gothic-b;
+        }
+    }
+    .toast-error {
+        visibility: hidden;
+        position: absolute;
+        width: 25%;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 12px;
+        background: rgb(223, 106, 106);
+        padding: 32px;
+        color: #fff;
+        transition: all 600ms;
+        &__title {
+            font-size: 1.5em;
+            font-family: $gothic;
+        }
+        &__title-bold {
+            font-family: $gothic-b;
         }
     }
 }
@@ -679,11 +993,13 @@ body {
             .item {
                 margin-bottom: 4px;
                 .link {
+                    display: block;
                     font-family: $gotham;
                     color: $footerText;
                     font-size: 1.2em;
                     line-height: 24px;
                     text-decoration: none;
+                    cursor: pointer;
                 }
             }
         }
@@ -979,6 +1295,205 @@ body {
                     }
                 }
             }
+        }
+        &__form {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 40px;
+            padding: 32px 120px;
+            .container__tax {
+                position: relative;
+                width: 30%;
+                height: 350px;
+                border: 1px solid $borderGray;
+                padding: 32px;
+                border-radius: 16px;
+                .title {
+                    font-size: 1em;
+                    font-family: $gotham;
+                    line-height: 17px;
+                    margin-bottom: 12px;
+                    color: $blackText;
+                }
+                .form-group {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 12px;
+                    .input-label {
+                        font-size: 1em;
+                        font-family: $gothic;
+                        line-height: 17px;
+                        color: $blackText;
+                    }
+                    .input-select {
+                        width: 100%;
+                        height: 40px;
+                        border: 1px solid $borderGray;
+                        &-option {
+                            font-family: $gothic;
+                            font-family: 1.5em;
+                            color: $blackText;
+                            line-height: 17px;
+                        }
+                    }
+                }
+                .tax-title {
+                    font-size: 1em;
+                    font-family: $gotham;
+                    line-height: 17px;
+                    color: $blackText;
+                }
+                .tax-price {
+                    font-size: 1.5em;
+                    font-family: $gothic-b;
+                    line-height: 17px;
+                    color: $blackText;
+                    margin-bottom: 20px;
+                }
+                &__month {
+                    background: $greenCake;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: auto;
+                    height: 40px;
+                    padding: 8px;
+                    .tax-month {
+                        font-size: 1em;
+                        font-family: $gothic;
+                        line-height: 18px;
+                        color: $blackText;
+                    }
+                    .interes {
+                        font-weight: $gothic-b;
+                    }
+                }
+                .btn {
+                    border: none;
+                    width: 100%;
+                    background: $greenCake;
+                    color: $blackText;
+                    border-radius: 8px;
+                    padding: 8px;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+                }
+            }
+            .container__contact {
+                position: relative;
+                width: 70%;
+                height: 1220px;
+                border: 1px solid $borderGray;
+                border-radius: 16px;
+                padding: 32px;
+                display: flex;
+                flex-direction: column;
+                .title {
+                    font-size: 2em;
+                    font-family: $gothic-b;
+                    line-height: 28px;
+                    color: $blackText;
+                    text-align: left;
+                }
+                .form {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+                    margin-bottom: 40px;
+                    .item {
+                        width: 100%;
+                        height: 150px;
+                        padding-top: 20px;
+                        .form-group {
+                            display: flex;
+                            flex-direction: column;
+                            .input-label {
+                                font-size: 0.9em;
+                                font-family: $gothic;
+                                line-height: 17px;
+                                margin-bottom: 4px;
+                                color: $blackText;
+                                height: 40px;
+                            }
+                            .input-select {
+                                width: 100%;
+                                height: 56px;
+                                border: 1px solid $borderGray;
+                                &-option {
+                                    font-family: $gothic;
+                                    font-family: 1.5em;
+                                    color: $blackText;
+                                    line-height: 17px;
+                                }
+                                &:focus {
+                                    border: 1px solid $greenPrimary;
+                                }
+                            }
+                            .input-text {
+                                width: 100%;
+                                height: 56px;
+                                border: 1px solid $borderGray;
+                                padding: 0 8px;
+                                &:focus {
+                                    border: 1px solid $greenPrimary;
+                                }
+                            }
+                            .select-text {
+                                .input-select-wrap {
+                                    width: 40%;
+                                }
+                                .input-text-wrap {
+                                    width: 60%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__inversion {
+            position: relative;
+            padding: 120px;
+            width: 100%;
+            height: 70vh;
+            &__form {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 60%;
+                height: 500px;
+                border: 1px solid $borderGray;
+                padding: 32px;
+                border-radius: 16px;
+                display: grid;
+                gap: 20px;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .btn {
+                position: absolute;
+                bottom: 4%;
+                border: none;
+                width: 10%;
+                left: 50%;
+                transform: translateX(-50%);
+                background: $greenPrimary;
+                color: #fff;
+                border-radius: 8px;
+                padding: 8px;
+                font-size: 1.5em;
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+        }
+        .toast {
+            width: 55%;
+        }
+        .toast-error {
+            width: 55%;
         }
     }
     .footer {
@@ -1444,6 +1959,159 @@ body {
                 .description {
                     text-align: center;
                 }
+            }
+        }
+        &__form {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: 20px;
+            padding: 20px;
+            .container__tax {
+                position: relative;
+                width: 100%;
+                height: 350px;
+                border: 1px solid $borderGray;
+                padding: 32px;
+                border-radius: 16px;
+                .title {
+                    font-size: 1em;
+                    font-family: $gotham;
+                    line-height: 17px;
+                    margin-bottom: 12px;
+                    color: $blackText;
+                }
+                .form-group {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 12px;
+                    .input-label {
+                        font-size: 1em;
+                        font-family: $gothic;
+                        line-height: 17px;
+                        color: $blackText;
+                    }
+                    .input-select {
+                        width: 100%;
+                        height: 40px;
+                        border: 1px solid $borderGray;
+                        &-option {
+                            font-family: $gothic;
+                            font-family: 1.5em;
+                            color: $blackText;
+                            line-height: 17px;
+                        }
+                    }
+                }
+                .tax-title {
+                    font-size: 1em;
+                    font-family: $gotham;
+                    line-height: 17px;
+                    color: $blackText;
+                }
+                .tax-price {
+                    font-size: 1.5em;
+                    font-family: $gothic-b;
+                    line-height: 17px;
+                    color: $blackText;
+                    margin-bottom: 20px;
+                }
+                &__month {
+                    background: $greenCake;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: auto;
+                    height: 40px;
+                    padding: 8px;
+                    .tax-month {
+                        font-size: 1em;
+                        font-family: $gothic;
+                        line-height: 18px;
+                        color: $blackText;
+                    }
+                    .interes {
+                        font-weight: $gothic-b;
+                    }
+                }
+                .btn {
+                    border: none;
+                    width: 100%;
+                    background: $greenCake;
+                    color: $blackText;
+                    border-radius: 8px;
+                    padding: 8px;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+                }
+            }
+            .container__contact {
+                position: relative;
+                width: 100%;
+                height: 2020px;
+                border: 1px solid $borderGray;
+                border-radius: 16px;
+                padding: 32px;
+                display: flex;
+                flex-direction: column;
+                .title {
+                    font-size: 2em;
+                    font-family: $gothic-b;
+                    line-height: 28px;
+                    color: $blackText;
+                    text-align: left;
+                }
+                .form {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 20px;
+                    margin-bottom: 20px;
+                }
+                .btn {
+                    width: 100%;
+                }
+            }
+        }
+        &__inversion {
+            margin: 20px;
+            position: relative;
+            width: 95%;
+            height: auto;
+            transform: translate(0, 0);
+            padding: 20px;
+            border: 1px solid $borderGray;
+            &__form {
+                position: relative;
+                top: 0;
+                left: 0;
+                transform: translate(0, 0);
+                border: none;
+                width: 100%;
+                height: 100%;
+                border-radius: 16px;
+                display: flex;
+                flex-direction: column;
+                .item {
+                    height: 100px;
+                    margin-bottom: 12px;
+                }
+            }
+            .btn {
+                position: absolute;
+                bottom: 0;
+                border: none;
+                width: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+                background: $greenPrimary;
+                color: #fff;
+                border-radius: 8px;
+                padding: 8px;
+                font-size: 1.5em;
+                margin-bottom: 20px;
+                cursor: pointer;
             }
         }
     }
@@ -1998,6 +2666,175 @@ body {
                     text-align: center;
                     font-size: 1.3em;
                 }
+            }
+        }
+        &__form {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: 20px;
+            padding: 20px;
+            .container__tax {
+                position: relative;
+                width: 100%;
+                height: 350px;
+                border: 1px solid $borderGray;
+                padding: 32px;
+                border-radius: 16px;
+                .title {
+                    font-size: 1em;
+                    font-family: $gotham;
+                    line-height: 17px;
+                    margin-bottom: 12px;
+                    color: $blackText;
+                }
+                .form-group {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 12px;
+                    .input-label {
+                        font-size: 1em;
+                        font-family: $gothic;
+                        line-height: 17px;
+                        color: $blackText;
+                    }
+                    .input-select {
+                        width: 100%;
+                        height: 40px;
+                        border: 1px solid $borderGray;
+                        &-option {
+                            font-family: $gothic;
+                            font-family: 1.5em;
+                            color: $blackText;
+                            line-height: 17px;
+                        }
+                    }
+                }
+                .tax-title {
+                    font-size: 1em;
+                    font-family: $gotham;
+                    line-height: 17px;
+                    color: $blackText;
+                }
+                .tax-price {
+                    font-size: 1.5em;
+                    font-family: $gothic-b;
+                    line-height: 17px;
+                    color: $blackText;
+                    margin-bottom: 20px;
+                }
+                &__month {
+                    background: $greenCake;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: auto;
+                    height: 40px;
+                    padding: 8px;
+                    .tax-month {
+                        font-size: 1em;
+                        font-family: $gothic;
+                        line-height: 18px;
+                        color: $blackText;
+                    }
+                    .interes {
+                        font-weight: $gothic-b;
+                    }
+                }
+                .btn {
+                    border: none;
+                    width: 100%;
+                    background: $greenCake;
+                    color: $blackText;
+                    border-radius: 8px;
+                    padding: 8px;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+                }
+            }
+            .container__contact {
+                position: relative;
+                width: 100%;
+                height: 2020px;
+                border: 1px solid $borderGray;
+                border-radius: 16px;
+                padding: 32px;
+                display: flex;
+                flex-direction: column;
+                .title {
+                    font-size: 2em;
+                    font-family: $gothic-b;
+                    line-height: 28px;
+                    color: $blackText;
+                    text-align: left;
+                }
+                .form {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 20px;
+                    margin-bottom: 20px;
+                }
+                .btn {
+                    width: 100%;
+                }
+            }
+        }
+        &__inversion {
+            margin: 20px;
+            position: relative;
+            width: 90%;
+            height: 850px;
+            transform: translate(0, 0);
+            padding: 20px;
+            border: 1px solid $borderGray;
+            &__form {
+                position: relative;
+                top: 0;
+                left: 0;
+                transform: translate(0, 0);
+                border: none;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 16px;
+                display: flex;
+                flex-direction: column;
+                .item {
+                    height: 100px;
+                    margin-bottom: 12px;
+                }
+            }
+            .btn {
+                position: absolute;
+                bottom: 0;
+                border: none;
+                width: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+                background: $greenPrimary;
+                color: #fff;
+                border-radius: 8px;
+                padding: 8px;
+                font-size: 1.5em;
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+        }
+        .toast {
+            width: 90%;
+            padding: 12px;
+            &__title {
+                font-size: 1.3em;
+            }
+        }
+        .toast-error {
+            width: 90%;
+            padding: 12px;
+            &__title {
+                font-size: 1.3em;
+                font-family: $gothic;
             }
         }
     }

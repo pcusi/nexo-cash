@@ -129,7 +129,7 @@
                 </div>
             </div>
             <div class="container__loan__button">
-                <button class="btn">Registra tu solicitud de préstamo aquí</button>
+                <a class="btn" href="prestamo.php">Registra tu solicitud de préstamo aquí</a>
             </div>
         </div>
         <!-- end préstamo !-->
@@ -368,3 +368,4 @@
 
 </html>
 <script src="public/js/nexo.js"></script>
+<?php include_once('./shared/script.php'); ?>
