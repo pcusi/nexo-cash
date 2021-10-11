@@ -7,13 +7,13 @@
     <ul class="header__ul" id="collapse">
         <img src="public/assets/img/nexo_cash_vector.svg" class="top-vector">
         <li class="item">
-            <a class="link">Préstamo</a>
+            <a class="item-link" href="./prestamo">Préstamo</a>
         </li>
         <li class="item">
-            <a class="link">Invierte</a>
+            <a class="item-link" href="./invertir">Invierte</a>
         </li>
         <li class="item">
-            <a class="link">Conoce más</a>
+            <a class="item-link">Conoce más</a>
         </li>
     </ul>
     <div>

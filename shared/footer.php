@@ -8,8 +8,16 @@
     <div class="footer__link">
         <h1 class="footer__link__title">Contacto</h1>
         <nav class="nav">
-            <li class="item"><a href="mailto:nexocash@gmail.com" class="link"><i class="icon-email"></i> nexocash@gmail.com</a></li>
-            <li class="item"><a href="callto:+51949373540" class="link"><i class="icon-phone"></i> 949 373 540</a></li>
+            <li class="item">
+                <a href="mailto:nexocash@gmail.com" class="link">
+                    <i class="icon-email"></i> nexocash@gmail.com
+                </a>
+            </li>
+            <li class="item">
+                <a href="callto:+51949373540" class="link">
+                    <i class="icon-phone"></i> 949 373 540
+                </a>
+            </li>
         </nav>
     </div>
     <div class="footer__spacer"></div>
