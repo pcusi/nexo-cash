@@ -10,6 +10,7 @@
 body {
     background: #fff;
     font-size: 12px;
+    scroll-behavior: smooth;
 }
 
 .header {
@@ -78,6 +79,64 @@ body {
                 display: block;
             }
         }
+        .item-dropdown {
+            position: relative;
+            z-index: 5;
+            width: 20%;
+            align-self: center;
+            margin-right: 24px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            &-link {
+                color: #fff;
+                font-size: 1.8em;
+                line-height: 28px;
+                text-decoration: none;
+                font-family: $gotham;
+                display: block;
+            }
+            .arrow {
+                display: block;
+                background-image: url("../assets/img/arrow.svg");
+                padding: 0 12px;
+                width: 1.2em;
+                height: 1.2em;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        .dropdown {
+            display: none;
+            position:absolute;
+            top: 100px;
+            right: 20%;
+            border: $borderGray;
+            min-width: 200px;
+            min-height: 100px;
+            background: $greenPrimary;
+            z-index: 200;
+            .item {
+                width: 100%;
+                height: 100%;
+                padding: 16px;
+                &-li {
+                    margin-bottom: 40px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    .item-link {
+                        color: #fff;
+                        font-size: 1.8em;
+                        line-height: 28px;
+                        text-decoration: none;
+                        font-family: $gotham;
+                        display: block;
+                    }
+                }
+            }
+        }
     }
     &__collapse {
         display: none;
@@ -99,6 +158,8 @@ body {
 .container {
     position: relative;
     width: 100%;
+    z-index: 5;
+    margin-top: 150px;
     &__investment {
         position: relative;
         display: flex;
@@ -165,7 +226,6 @@ body {
                 width: 600px;
                 height: 600px;
                 display: block;
-                margin: 0 auto;
             }
         }
     }
@@ -251,6 +311,33 @@ body {
             left: 50%;
             transform: translate(-50%, -50%);
             background: $pinkColor;
+        }
+        .info {
+            position: absolute;
+            right: 10%;
+            transform: translate(-10%);
+            top: 8%;
+            z-index: 20;
+            display: flex;
+            flex-direction: column;
+            .title {
+                width: 100%;
+                font-size: 4em;
+                color: $blackText;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                font-family: $gothic-b;
+            }
+            .description {
+                width: 100%;
+                font-size: 2.2em;
+                color: $grayText;
+                font-family: $gotham;
+                word-wrap: break-word;
+                white-space: pre-line;
+                text-align: right;
+                line-height: 28px;
+            }
         }
         &__number {
             position: absolute;
@@ -645,6 +732,7 @@ body {
                 line-height: 28px;
             }
             .link {
+                display: inline-block;
                 color: $greenPrimary;
                 text-decoration: underline;
                 cursor: pointer;
@@ -847,7 +935,7 @@ body {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
             width: 40%;
             height: 500px;
             border: 1px solid $borderGray;
@@ -867,7 +955,7 @@ body {
                     font-family: $gotham;
                     line-height: 17px;
                     margin-bottom: 12px;
-                    color: $blackText;   
+                    color: $blackText;
                 }
                 .form-group {
                     display: flex;
@@ -1030,6 +1118,7 @@ body {
 /* escritorio hd */
 @media (min-width: 1025px) and (max-width: 1599px) {
     .header {
+        margin-bottom: 40px;
         &__brand {
             .img {
                 display: block;
@@ -1038,19 +1127,82 @@ body {
                 object-fit: cover;
             }
         }
+        
         &__ul {
             width: 60%;
             .item {
+                position: relative;
+                z-index: 5;
                 width: 20%;
                 align-self: center;
                 display: inline-block;
                 margin-right: 24px;
-                .link {
-                    color: white;
-                    font-size: 1.6em;
+                cursor: pointer;
+                &-link {
+                    color: #fff;
+                    font-size: 1.4em;
+                    line-height: 28px;
                     text-decoration: none;
                     font-family: $gotham;
-                    cursor: pointer;
+                    display: block;
+                }
+            }
+            .item-dropdown {
+                position: relative;
+                z-index: 5;
+                width: 20%;
+                align-self: center;
+                margin-right: 24px;
+                cursor: pointer;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                &-link {
+                    color: #fff;
+                    font-size: 1.2em;
+                    line-height: 28px;
+                    text-decoration: none;
+                    font-family: $gotham;
+                    display: block;
+                }
+                .arrow {
+                    display: block;
+                    background-image: url("../assets/img/arrow.svg");
+                    padding: 0 12px;
+                    width: 1.2em;
+                    height: 1.2em;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+            .dropdown {
+                display: none;
+                position:absolute;
+                top: 100px;
+                right: 20%;
+                border: $borderGray;
+                min-width: 200px;
+                min-height: 100px;
+                background: $greenPrimary;
+                z-index: 200;
+                .item {
+                    width: 100%;
+                    height: 100%;
+                    padding: 16px;
+                    &-li {
+                        margin-bottom: 40px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        .item-link {
+                            color: #fff;
+                            font-size: 1.2em;
+                            line-height: 28px;
+                            text-decoration: none;
+                            font-family: $gotham;
+                            display: block;
+                        }
+                    }
                 }
             }
         }
@@ -1059,7 +1211,7 @@ body {
         padding: 0;
         &__investment {
             margin-bottom: 150px;
-            padding: 0 60px;
+            padding: 60px;
             &__info {
                 display: flex;
                 flex-direction: column;
@@ -1069,6 +1221,12 @@ body {
             }
             &__img {
                 width: 50%;
+                .sales__img {
+                    width: 500px;
+                    height: 500px;
+                    display: block;
+                    margin: 0 auto;
+                }
             }
         }
         &__us {
@@ -1081,6 +1239,33 @@ body {
             }
         }
         &__step {
+            .info {
+                position: absolute;
+                right: 12%;
+                transform: translate(-12%);
+                top: 6%;
+                z-index: 20;
+                display: flex;
+                flex-direction: column;
+                .title {
+                    width: 100%;
+                    font-size: 3em;
+                    color: $blackText;
+                    text-transform: uppercase;
+                    margin-bottom: 0;
+                    font-family: $gothic-b;
+                }
+                .description {
+                    width: 100%;
+                    font-size: 1.4em;
+                    color: $grayText;
+                    font-family: $gotham;
+                    word-wrap: break-word;
+                    white-space: pre-line;
+                    text-align: right;
+                    line-height: 28px;
+                }
+            }
             &__number {
                 &__grid {
                     position: relative;
@@ -1458,12 +1643,12 @@ body {
             position: relative;
             padding: 120px;
             width: 100%;
-            height: 70vh;
+            height: 85vh;
             &__form {
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%,-50%);
+                transform: translate(-50%, -50%);
                 width: 60%;
                 height: 500px;
                 border: 1px solid $borderGray;
@@ -1475,7 +1660,7 @@ body {
             }
             .btn {
                 position: absolute;
-                bottom: 4%;
+                bottom: 5%;
                 border: none;
                 width: 10%;
                 left: 50%;
@@ -1567,6 +1752,9 @@ body {
                     cursor: pointer;
                 }
             }
+            .item-dropdown {
+                display: none;
+            }
         }
         &__collapse {
             position: relative;
@@ -1588,6 +1776,7 @@ body {
     }
     .container {
         padding: 0;
+        margin-top: 0;
         &__investment {
             padding: 20px;
             flex-direction: column;
@@ -1691,6 +1880,9 @@ body {
                 left: 10%;
                 transform: translate(0, 0);
                 background: $pinkColor;
+            }
+            .info {
+                display: none;
             }
             &__number {
                 position: absolute;
@@ -2262,6 +2454,9 @@ body {
                     cursor: pointer;
                 }
             }
+            .item-dropdown {
+                display: none;
+            }
         }
         &__collapse {
             position: relative;
@@ -2285,11 +2480,12 @@ body {
         position: relative;
         padding: 0;
         z-index: 10;
+        margin-top: 0;
         transition: all 500ms;
         &__investment {
             padding: 20px;
             flex-direction: column;
-            margin-bottom: 32px;
+            margin-bottom: 40px;
             &__info {
                 padding: 0 20px;
                 width: 100%;
@@ -2321,7 +2517,7 @@ body {
             &__img {
                 width: 100%;
                 .sales__img {
-                    width: 100%;
+                    width: 70%;
                     height: auto;
                     display: block;
                     margin: 0 auto;
@@ -2330,7 +2526,7 @@ body {
             }
         }
         &__us {
-            margin-bottom: 32px;
+            margin-bottom: 40px;
             padding: 20px;
             .title {
                 width: 100%;
@@ -2376,6 +2572,10 @@ body {
             background: $greenCake;
             display: flex;
             flex-direction: row;
+            margin-bottom: 40px;
+            .info {
+                display: none;
+            }
             .line {
                 position: absolute;
                 top: 0;
@@ -2488,7 +2688,7 @@ body {
             flex-direction: column;
             width: 100%;
             padding: 20px;
-            margin-bottom: 32px;
+            margin-bottom: 40px;
             &__info {
                 width: 100%;
                 padding: 0 20px;
@@ -2547,7 +2747,7 @@ body {
         &__benefit {
             flex-direction: column;
             padding: 20px;
-            margin: 0 0 0 0;
+            margin: 0 0 40px 0;
             width: 100%;
             height: auto;
             &__img {
@@ -2627,6 +2827,7 @@ body {
             flex-direction: column;
             padding: 20px;
             margin: 0 0 0 0;
+            margin-bottom: 40px;
             width: 100%;
             &__info {
                 flex-direction: column;
@@ -2646,8 +2847,19 @@ body {
                     text-align: center;
                 }
                 .accordion {
-                    &__title {
-                        font-size: 1.3em;
+                    &__action {
+                        &__title {
+                            font-size: 1.3em;
+                        }
+                        &__arrow {
+                            display: block;
+                            background-image: url("../assets/img/arrow.svg");
+                            padding: 0 12px;
+                            width: 1.2em;
+                            height: 1.2em;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
                     }
                     &__panel {
                         &__description {

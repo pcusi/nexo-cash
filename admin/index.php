@@ -36,7 +36,15 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <!-- icono -->
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../public/assets/img/nexo_cash_logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../public/assets/img/nexo_cash_logo.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../public/assets/img/nexo_cash_logo.png">
+  <meta name="description" content="Nexo Cash - Conectamos a personas emprendedoras como tú.">
+  <META NAME="reply-to" CONTENT="nexocash@gmail.com">
+  <link rev="made" href="mailto:nexocash@gmail.com">
+  <meta name="author" content="Nexo Cash">
+  <meta name="keywords" content="Nexo Cash, Préstamos, préstamos, Invertir, Invertir, Nexo, Cash, nexo, cash">
+  <meta name="copyright" content="Nexo Cash, Todos los derechos reservados">
 </head>
 
 <body class="hold-transition login-page">

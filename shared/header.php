@@ -12,9 +12,16 @@
         <li class="item">
             <a class="item-link" href="./invertir">Invierte</a>
         </li>
-        <li class="item">
-            <a class="item-link">Conoce más</a>
+        <li class="item-dropdown" id="dropdown-item">
+            <a class="item-link">Conoce más </a><span class="arrow"></span>
         </li>
+        <div class="dropdown" id="dropdown">
+            <div class="item">
+                <li class="item-li"><a href="#procesos" class="item-link">Sobre el proceso</a></li>
+                <li class="item-li"><a href="#beneficios" class="item-link">Beneficios</a></li>
+                <li class="item-li"><a href="#preguntas" class="item-link">Preguntas frecuentes</a></li>
+            </div>
+        </div>
     </ul>
     <div>
         <button class="header__collapse" id="collapse-btn" type="button">

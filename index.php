@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/scss/styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/assets/img/nexo_cash_logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/assets/img/nexo_cash_logo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="public/assets/img/nexo_cash_logo.png">
+    <meta name="description" content="Nexo Cash - Conectamos a personas emprendedoras como tú.">
+    <META NAME="reply-to" CONTENT="nexocash@gmail.com">
+    <link rev="made" href="mailto:nexocash@gmail.com">
+    <meta name="author" content="Nexo Cash">
+    <meta name="keywords" content="Nexo Cash, Préstamos, préstamos, Invertir, Invertir, Nexo, Cash, nexo, cash">
+    <meta name="copyright" content="Nexo Cash, Todos los derechos reservados">
     <title>Nexo Cash</title>
 </head>
 
@@ -129,13 +138,20 @@
                 </div>
             </div>
             <div class="container__loan__button">
-                <a class="btn" href="prestamo.php">Registra tu solicitud de préstamo aquí</a>
+                <a class="btn" href="prestamo">Registra tu solicitud de préstamo aquí</a>
             </div>
         </div>
         <!-- end préstamo !-->
         <!-- region pasos !-->
-        <div class="container__step">
+        <div class="container__step" id="procesos">
             <img src="public/assets/img/nexo_cash_step.png" class="vector">
+            <div class="info">
+                <h1 class="title">Conoce el proceso</h1>
+                <p class="description">
+                    Estos son los pasos a seguir para
+                    <span></span> concretar tu préstamo
+                </p>
+            </div>
             <div class="line"></div>
             <div class="container__step__number">
                 <div class="container__step__number__grid">
@@ -276,12 +292,12 @@
                 </div>
             </div>
             <div class="container__loan__button">
-                <button class="btn">Registrate como inversionista aquí</button>
+                <a class="btn" href="invertir">Registrate como inversionista aquí</a>
             </div>
         </div>
         <!-- end region !-->
         <!-- region beneficio !-->
-        <div class="container__benefit">
+        <div class="container__benefit" id="beneficios">
             <div class="container__benefit__img">
                 <img src="./public/assets/img/nexo_cash_benefit.png" class="benefit__img">
             </div>
@@ -350,7 +366,7 @@
         </div>
         <!-- end beneficio !-->
         <!-- region preguntas !-->
-        <div class="container__question">
+        <div class="container__question" id="preguntas">
             <div class="container__question__info" id="question-info">
                 <h1 class="title">¿Tienes preguntas?</h1>
                 <p class="description">Aquí puedes conocer más sobre el tema</p>
@@ -358,7 +374,7 @@
             <div class="container__question__img">
                 <img src="public/assets/img/nexo_cash_contact.png" class="img">
                 <p class="title">¿Tienes más preguntas?</p>
-                <span class="description">Abre el chat de atención <a href="#" class="link">aquí</a></span>
+                <p class="description">Abre el chat de atención <span> <a href="https://wa.me/+51949373540?text=Tengo%20consultas%20sobre%20como%20solicitar%20un%20préstamo%20o%20como%20invertir." target="_blank" class="link">aquí</a></span></p>
             </div>
         </div>
         <!-- end region !-->
