@@ -5,8 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/scss/styles.css">
-    <title>Nexo Cash - Préstamo</title>
+    <link rel="stylesheet" href="public/scss/styles-prestamo.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/assets/img/nexo_cash_logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/assets/img/nexo_cash_logo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="public/assets/img/nexo_cash_logo.png">
+    <meta name="description" content="Nexo Cash - Conectamos a personas emprendedoras como tú.">
+    <META NAME="reply-to" CONTENT="nexocash@gmail.com">
+    <link rev="made" href="mailto:nexocash@gmail.com">
+    <meta name="author" content="Nexo Cash">
+    <meta name="keywords" content="Nexo Cash, Préstamos, préstamos, Invertir, Invertir, Nexo, Cash, nexo, cash">
+    <meta name="copyright" content="Nexo Cash, Todos los derechos reservados">
+    <title>Nexo Cash - Invertir</title>
 </head>
 
 <body>

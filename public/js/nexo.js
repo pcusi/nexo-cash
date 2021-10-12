@@ -12,7 +12,7 @@ collapseButton.onclick = function () {
         } else {
             collapse.style.display = 'block';
             collapseHeader.style.zIndex = '20';
-            collapseContainer.style.marginTop = '120px';
+            collapseContainer.style.marginTop = '155px';
         }
     }
 }
@@ -87,5 +87,25 @@ function questions() {
     }
 }
 
+let dropdownItem = document.getElementById('dropdown-item');
+let dropdown = document.getElementById('dropdown');
+
+dropdownItem.addEventListener("mouseenter", function(e) {
+
+    dropdown.style.display = 'block';
+
+});
+
+dropdown.addEventListener("mouseenter", function(e) {
+
+    dropdown.style.display = 'block';
+
+});
+
+dropdown.addEventListener("mouseleave", function(e) {
+
+    dropdown.style.display = 'none';
+
+});
 
 questions();
