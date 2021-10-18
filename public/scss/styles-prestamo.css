@@ -1182,7 +1182,7 @@ body {
 .container__form .container__tax {
   position: relative;
   width: 20%;
-  height: 370px;
+  height: 390px;
   border: 1px solid #e3dfe4;
   padding: 32px;
   border-radius: 16px;
@@ -1272,7 +1272,7 @@ body {
 }
 
 .container__form .container__tax small{
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: "Ghotic", sans-serif;
 }
 
@@ -2072,7 +2072,7 @@ body {
   .container__form .container__tax {
     position: relative;
     width: 30%;
-    height: 370px;
+    height: 390px;
     border: 1px solid #e3dfe4;
     padding: 32px;
     border-radius: 16px;
