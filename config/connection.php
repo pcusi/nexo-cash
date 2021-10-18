@@ -3,7 +3,7 @@
 $host = 'localhost';
 $username = 'root';
 $password = '';
-$database = 'db_nexocash';
+$database = 'nexocash_db';
 
 //Connect and select the database
 $conn = new mysqli($host, $username, $password, $database);

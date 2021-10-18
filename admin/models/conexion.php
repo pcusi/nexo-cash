@@ -17,7 +17,7 @@ class Conexion
     {
 
         $host = 'localhost';
-        $db = 'db_nexocash';
+        $db = 'nexocash_db';
         $user = 'root';
         $password = '';
 

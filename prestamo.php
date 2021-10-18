@@ -39,7 +39,7 @@
                 <div class="container__tax__month">
                     <p class="tax-month">Tasa de interés mensual promedio de: <span><b id="interes">0.00%</b></span></p>
                 </div>
-                <small>Los intereses solo son referenciales.</small>
+                <small>La información de esta tabla es referencial, está sujeta a cambios en función de la TCEA.</small>
             </div>
             <div class="container__contact">
                 <form id="form-prestamo">

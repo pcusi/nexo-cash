@@ -164,7 +164,7 @@ function sendApplication() {
             success: function (response) {
                 $('#toast').css('visibility', 'visible');
                 toastTitle.innerHTML = 'Tu solicitud de préstamo ha sido enviado.';
-                $('#form-prestamo').trigger('reset');
+                //$('#form-prestamo').trigger('reset');
                 setTimeout(() => {
                     $('#toast').css('visibility', 'hidden');
                 }, 4000);

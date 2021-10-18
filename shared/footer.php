@@ -2,7 +2,7 @@
     <div class="footer__info">
         <img src="public/assets/img/nexo_cash_logo_horizontal.png" class="footer__info__img">
         <p class="footer__info__description">
-            Conéctamos a personas emprendedoras como tú.
+            Fintech
         </p>
     </div>
     <div class="footer__link">
