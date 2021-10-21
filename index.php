@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/scss/styles.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="public/assets/img/nexo_cash_logo.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="public/assets/img/nexo_cash_logo.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="public/assets/img/nexo_cash_logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/assets/img/nexo_cash_favicon.jpeg">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/assets/img/nexo_cash_favicon.jpeg">
+    <link rel="icon" type="image/png" sizes="96x96" href="public/assets/img/nexo_cash_favicon.jpeg">
     <meta name="description" content="Nexo Cash - Conectamos a personas emprendedoras como tú.">
     <META NAME="reply-to" CONTENT="nexocash@gmail.com">
     <link rev="made" href="mailto:nexocash@gmail.com">
@@ -280,13 +280,12 @@
                             <span class="check-img"></span>
                             <a class="shape">
                                 Se incluye dentro de la tasa ofrecida al prestatario un porcentaje
-                                que cubre un seguro inmobilario, misma que reduce el riesgo de in-
-                                versión frente a factores externos.
+                                que cubre un seguro inmobilario, misma que reduce el riesgo de inversión frente a factores externos.
                             </a>
                         </li>
                         <li class="item">
                             <span class="check-img"></span>
-                            <a class="shape">La Ley favorece y protege el Titulo de credito hipotecaro negociable.</a>
+                            <a class="shape">La Ley, favorece y protege el título de crédito hipotecario negociable.</a>
                         </li>
                     </ul>
                 </div>

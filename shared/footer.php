@@ -9,8 +9,8 @@
         <h1 class="footer__link__title">Contacto</h1>
         <nav class="nav">
             <li class="item">
-                <a href="mailto:nexocash@gmail.com" class="link">
-                    <i class="icon-email"></i> nexocash@gmail.com
+                <a href="mailto:hola@nexocash.pe" class="link">
+                    <i class="icon-email"></i> hola@nexocash.pe
                 </a>
             </li>
             <li class="item">

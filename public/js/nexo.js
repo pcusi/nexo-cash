@@ -25,7 +25,7 @@ function questions() {
         },
         {
             question: '¿Qué es un préstamo con garantía hipotecaria',
-            answer: 'Son préstamos o créditos que se solicitan dejando un inmueble como garantía. Se denominan así porque se firma una garantía a nombre del prestamista sobre tu inmueble, solo debes poder demostrar que podrás afrontar el pago de toda la deuda sin poner en riesgo tu patrimonio personal, por ello somos más flexibles que el proceso de aprobación de la banca tradicional. Este un préstamo en efectivo y s diferencia del crédito hipotecario de la banca, este tipo de préstamo es libre, lo puedes usar para lo que necesites, como realizar pagos pendientes que tienes en la banca, comprar un nuevo bien o hasta invertir en tu negocio.'
+            answer: 'Son préstamos o créditos que se solicitan dejando un inmueble como garantía. Se denominan así porque se firma una garantía a nombre del prestamista sobre tu inmueble, solo debes poder demostrar que podrás afrontar el pago de toda la deuda sin poner en riesgo tu patrimonio personal, por ello somos más flexibles que el proceso de aprobación de la banca tradicional. Este un préstamo en efectivo y se diferencia del crédito hipotecario de la banca, este tipo de préstamo es libre, lo puedes usar para lo que necesites, como realizar pagos pendientes que tienes en la banca, comprar un nuevo bien o hasta invertir en tu negocio.'
         },
         {
             question: '¿Qué tipo de inmuebles aplican para solicitar un préstamo?',
