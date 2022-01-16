@@ -144,13 +144,8 @@
                         </div>
                         <div class="item">
                             <div class="form-group">
-                                <label for="UbicacionPropiedad" class="input-label">¿En dónde se encuentra ubicado?</label>
-                                <select name="UbicacionPropiedad" id="ubicacionpropiedad" class="input-select" required>
-                                    <option selected disabled class="input-select-option">Selecciona una opción</option>
-                                    <option value="1" class="input-select-option">Departamento</option>
-                                    <option value="2" class="input-select-option">Provincia</option>
-                                    <option value="3" class="input-select-option">Distrito</option>
-                                </select>
+                                <label for="ValorPropiedad" class="input-label">¿Donde está ubicado? Departamento - Provincia - Distrito</label>
+                                <input type="text" name="UbicacionPropiedad" id="ubicacionpropiedad" class="input-text" placeholder="Ejemplo: Lima/Lima/Villa María del triunfo" required/>
                             </div>
                         </div>
                     </div>
