@@ -33,19 +33,19 @@ class EmailSender
             $mail->SMTPDebug = SMTP::DEBUG_LOWLEVEL;      //Enable verbose debug output
             $mail->isSMTP();
             $mail->CharSet = 'UTF-8';                             //Send using SMTP
-            $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+            $mail->Host       = 'mail.nexocash.pe';                     //Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            $mail->Username   = 'pcusir@gmail.com';                     //SMTP username
-            $mail->Password   = 'kbirgmruxiwifxvt';                       //SMTP password         //Enable implicit TLS encryption
-            $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+            $mail->Username   = 'hola@nexocash.pe';                     //SMTP username
+            $mail->Password   = 'aECEB~wxo;Bg';                       //SMTP password         //Enable implicit TLS encryption
+            $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
             //Recipients
             $mail->setFrom($correo, 'Cliente');
-            $mail->addAddress('pcusir@gmail.com', 'Piero Cusi');     //Add a recipient
+            $mail->addAddress('hola@nexocash.pe', 'Nexo Cash');     //Add a recipient
 
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
-            $mail->Subject = 'Solicitud de Préstamo - Nexo Cash';
+            $mail->Subject = 'Solicitud de Pr谷stamo - Nexo Cash';
 
             $mail->msgHTML($message);
 
@@ -73,19 +73,19 @@ class EmailSender
             $mail->SMTPDebug = SMTP::DEBUG_LOWLEVEL;      //Enable verbose debug output
             $mail->isSMTP();
             $mail->CharSet = 'UTF-8';                             //Send using SMTP
-            $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+            $mail->Host       = 'mail.nexocash.pe';                     //Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            $mail->Username   = 'pcusir@gmail.com';                     //SMTP username
-            $mail->Password   = 'kbirgmruxiwifxvt';                       //SMTP password         //Enable implicit TLS encryption
-            $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+            $mail->Username   = 'hola@nexocash.pe';                     //SMTP username
+            $mail->Password   = 'aECEB~wxo;Bg';                       //SMTP password         //Enable implicit TLS encryption
+            $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
             //Recipients
             $mail->setFrom($correo, 'Cliente');
-            $mail->addAddress('pcusir@gmail.com', 'Piero Cusi');     //Add a recipient
+            $mail->addAddress('hola@nexocash.pe', 'Nexo Cash');     //Add a recipient
 
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
-            $mail->Subject = 'Solicitud de Inversión - Nexo Cash';
+            $mail->Subject = 'Solicitud de Inversi車n - Nexo Cash';
 
             $mail->msgHTML($message);
 

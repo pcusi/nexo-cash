@@ -18,8 +18,8 @@ class Conexion
 
         $host = 'localhost';
         $db = 'nexocash_db';
-        $user = 'root';
-        $password = '';
+        $user = 'nexocash_admin';
+        $password = '_y9SMDxaOIRZ';
 
         try {
             $conn = new PDO(
@@ -38,6 +38,6 @@ class Conexion
     public function ruta()
     {
 
-        return "/nexo-cash/admin/";
+        return "/admin/";
     }
 }

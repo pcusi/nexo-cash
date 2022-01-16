@@ -50,7 +50,7 @@
                     </div>
                     <div class="item">
                         <div class="form-group">
-                            <label for="inversion" class="input-label">Inversion</label>
+                            <label for="inversion" class="input-label">Inversión</label>
                             <input type="text" name="Inversion" id="inversion" class="input-text" placeholder="Ingresa el monto de tu inversión" required>
                         </div>
                     </div>
