@@ -19,10 +19,10 @@
 </head>
 
 <body>
-    <?php include_once('./shared/header.php'); ?>
-    <div class="container" id="collapse-container">
+    <div class="container">
+        <?php include_once('./shared/header.php'); ?>
         <!-- region invierte !-->
-        <div class="container__investment">
+        <div class="container__investment" id="collapse-container">
             <div class="container__investment__info">
                 <h1 class="title">
                     Invierte y presta dinero de forma
@@ -79,11 +79,10 @@
                     <img src="public/assets/img/nexo_cash_session.png" class="item__img">
                     <h1 class="item__title">Asesoramiento</h1>
                     <pre class="item__description">
-                        Te asesoramos financie-
-                        ra y legalmente, prepa-
-                        rando y presentando tu
-                        propuesta juntos hasta el
-                        final.
+                        Te asesoramos financiera
+                        y legalmente, preparando
+                        y presentando tu propuesta
+                        juntos hasta el final.
                     </pre>
                 </div>
                 <div class="item">
@@ -91,10 +90,10 @@
                     <h1 class="item__title">Gestión</h1>
                     <pre class="item__description">
                         Nos encargamos de los 
-                        documentos legales ne-
-                        cesarios para concretar
-                        tu préstamo o inversión
-                        de la forma más segura.
+                        documentos legales necesarios 
+                        para concretar tu 
+                        préstamo o inversión de 
+                        la forma más segura.
                     </pre>
                 </div>
             </div>
@@ -176,9 +175,8 @@
                         <div class="thumb__bottom">
                             <img src="public/assets/img/nexo_cash_step_two.png" class="thumb__bottom__img">
                             <p class="thumb__bottom__title">
-                                Presentación de documentos y comisión para
-                                la inspección y tasación
-                                de la propiedad.
+                                Se realiza la inspección y se determina el valor real de la propiedad.
+                                Se comienza a preparar la oferta inicial del préstamo.
                             </p>
                             <div class="thumb__bottom__triangle"></div>
                         </div>
@@ -295,6 +293,19 @@
             </div>
         </div>
         <!-- end region !-->
+        <!-- region preguntas !-->
+        <div class="container__question" id="preguntas">
+            <div class="container__question__info" id="question-info">
+                <h1 class="title">¿Tienes preguntas?</h1>
+                <p class="description">Aquí puedes conocer más sobre el tema</p>
+            </div>
+            <div class="container__question__img">
+                <img src="public/assets/img/nexo_cash_contact.png" class="img">
+                <p class="title">¿Tienes más preguntas?</p>
+                <p class="description">Abre el chat de atención <span> <a href="https://wa.me/+51949373540?text=Tengo%20consultas%20sobre%20como%20solicitar%20un%20préstamo%20o%20como%20invertir." target="_blank" class="link">aquí</a></span></p>
+            </div>
+        </div>
+        <!-- end region !-->
         <!-- region beneficio !-->
         <div class="container__benefit" id="beneficios">
             <div class="container__benefit__img">
@@ -364,19 +375,6 @@
             <img src="public/assets/img/nexo_cash_vector.svg" class="second-vector">
         </div>
         <!-- end beneficio !-->
-        <!-- region preguntas !-->
-        <div class="container__question" id="preguntas">
-            <div class="container__question__info" id="question-info">
-                <h1 class="title">¿Tienes preguntas?</h1>
-                <p class="description">Aquí puedes conocer más sobre el tema</p>
-            </div>
-            <div class="container__question__img">
-                <img src="public/assets/img/nexo_cash_contact.png" class="img">
-                <p class="title">¿Tienes más preguntas?</p>
-                <p class="description">Abre el chat de atención <span> <a href="https://wa.me/+51949373540?text=Tengo%20consultas%20sobre%20como%20solicitar%20un%20préstamo%20o%20como%20invertir." target="_blank" class="link">aquí</a></span></p>
-            </div>
-        </div>
-        <!-- end region !-->
     </div>
     <?php include_once('./shared/footer.php'); ?>
 </body>

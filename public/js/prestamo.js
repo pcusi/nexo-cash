@@ -104,9 +104,10 @@ function sendApplication() {
     let monto = $('#monto').val();
     let ingreso = $('#ingreso').val();
     let valorPropiedad = $('#valorpropiedad').val();
-
+    let ubicacionPropiedad = $('#ubicacionpropiedad').val();
+    
     if (correo == '' || dni == '' || telefono == '' || monto == '' ||
-        ingreso == '' || valorPropiedad == '') {
+        ingreso == '' || valorPropiedad == '' || ubicacionPropiedad == '') {
 
         $('#toast-error').css('visibility', 'visible');
         toastTitleError.innerHTML = 'Debe rellenar todos los campos.';

@@ -25,6 +25,7 @@ if (isset($_SESSION["Id"])) {
         <link href="../plugins/datatables/buttons.dataTables.min.css" rel="stylesheet" />
         <link href="../plugins/datatables/responsive.dataTables.min.css" rel="stylesheet" />
         <!-- Ionicons -->
+        <link rel="icon" type="image/png" sizes="96x96" href="../../public/assets/img/nexo_cash_favicon.jpeg">
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <!-- Tempusdominus Bbootstrap 4 -->
         <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">

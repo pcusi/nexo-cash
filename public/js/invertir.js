@@ -52,8 +52,6 @@ function invertir() {
 
         let form = $('#form-invertir').serialize();
 
-        console.log(form);
-
         $.ajax({
             type: 'POST',
             url: 'controller/inversion.php',

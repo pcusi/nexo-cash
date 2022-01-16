@@ -1,5 +1,11 @@
 <?php
 //db details
+/*
+    $host = 'localhost';
+    $username = 'nexocash_admin';
+    $password = '_y9SMDxaOIRZ';
+    $database = 'nexocash_db';
+*/
 $host = 'localhost';
 $username = 'root';
 $password = '';

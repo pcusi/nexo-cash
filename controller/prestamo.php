@@ -31,6 +31,8 @@ if ($query) {
 
         $mailSender = $mail->sendEmail($correo, $dni, $monto, $tipomonto, $telefono);
 
+        echo $mailSender;
+
         $response = 'success';
 } else {
         $response = 'failed';

@@ -20,7 +20,7 @@ collapseButton.onclick = function () {
 function questions() {
     const questions = [
         {
-            question: '¿Qué es un titulo de crédito hipotecario negociable?',
+            question: '¿Qué es un título de crédito hipotecario negociable?',
             answer: 'Es el título valor por el cual una persona puede hipotecar o poner como garantía al solicitar un préstamo, esta garantía se registra y transfiere los derechos al prestamista, hasta pagar la totalidad de la deuda generada por el préstamo. Inscrita bajo la Ley Nro. 26702 de diciembre de 1996, artículo 239 Consagrada por la Ley General del Sistema Financiero y la SBS.'
         },
         {
