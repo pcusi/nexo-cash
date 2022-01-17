@@ -4,4 +4,6 @@ PhpMailer
 composer.json
 composer.lock
 .idea
+vendor/
 .env.example
+.htaccess
