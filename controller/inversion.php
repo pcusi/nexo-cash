@@ -1,7 +1,7 @@
 <?php
 
 include_once('../config/connection.php');
-require 'correos.php';
+require('correos.php');
 
 $nombres = $_POST['Nombres'];
 $apellidos = $_POST['Apellidos'];

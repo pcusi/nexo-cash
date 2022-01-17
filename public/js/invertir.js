@@ -64,7 +64,7 @@ function invertir() {
                 setTimeout(() => {
                     $('#toast').css('visibility', 'hidden');
                 }, 4000);
-            }
+            },
         });
     }
 

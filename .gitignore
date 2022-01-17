@@ -1,2 +1,7 @@
 admin/plugins/
 PhpMailer
+.env
+composer.json
+composer.lock
+.idea
+.env.example

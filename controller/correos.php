@@ -1,16 +1,18 @@
 <?php
-//Import PHPMailer classes into the global namespace
-//These must be at the top of your script, not inside a function
-use PhpMailer\PhpMailer\PHPMailer;
-use PhpMailer\PhpMailer\SMTP;
-use PhpMailer\PhpMailer\Exception;
 
-require '../PhpMailer/PHPMailer.php';
-require '../PhpMailer/SMTP.php';
-require '../PhpMailer/Exception.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require '../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
+$dotenv->load();
 
 class EmailSender
 {
+
     function sendEmail(string $correo, int $dni, float $monto, int $tipomonto, $telefono)
     {
         //Create an instance; passing `true` enables exceptions
@@ -29,23 +31,23 @@ class EmailSender
         }
 
         try {
-            //Server settings             
-            $mail->SMTPDebug = SMTP::DEBUG_LOWLEVEL;      //Enable verbose debug output
             $mail->isSMTP();
-            $mail->CharSet = 'UTF-8';                             //Send using SMTP
-            $mail->Host       = 'mail.nexocash.pe';                     //Set the SMTP server to send through
-            $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            $mail->Username   = 'hola@nexocash.pe';                     //SMTP username
-            $mail->Password   = 'aECEB~wxo;Bg';                       //SMTP password         //Enable implicit TLS encryption
-            $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+            $mail->CharSet = 'UTF-8';
+            $mail->Host       = $_ENV['MAIL_HOST'];
+            $mail->SMTPDebug = 2;
+            $mail->SMTPAuth   = true;
+            $mail->SMTPSecure = "ssl";
+            $mail->Username   = $_ENV['MAIL_ACCOUNT'];
+            $mail->Password   = $_ENV['MAIL_PASSWORD'];
+            $mail->Port       = $_ENV['GMAIL_PORT'];
 
             //Recipients
             $mail->setFrom($correo, 'Cliente');
-            $mail->addAddress('hola@nexocash.pe', 'Nexo Cash');     //Add a recipient
+            $mail->addAddress($_ENV['MAIL_ACCOUNT'], 'Nexo Cash');     //Add a recipient
 
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
-            $mail->Subject = 'Solicitud de Pr谷stamo - Nexo Cash';
+            $mail->Subject = 'Solicitud de Préstamo - Nexo Cash';
 
             $mail->msgHTML($message);
 
@@ -69,21 +71,19 @@ class EmailSender
         $message = str_replace('%inversion%', $inversion, $message);
 
         try {
-            //Server settings             
-            $mail->SMTPDebug = SMTP::DEBUG_LOWLEVEL;      //Enable verbose debug output
             $mail->isSMTP();
-            $mail->CharSet = 'UTF-8';                             //Send using SMTP
-            $mail->Host       = 'mail.nexocash.pe';
-            $mail->SMTPDebug = 2;                     //Set the SMTP server to send through
+            $mail->CharSet = 'UTF-8';
+            $mail->Host       = $_ENV['MAIL_HOST'];
+            $mail->SMTPDebug = 2;
             $mail->SMTPAuth   = true;
-            $mail->SMTPSecure = "ssl";                                   //Enable SMTP authentication
-            $mail->Username   = 'hola@nexocash.pe';                     //SMTP username
-            $mail->Password   = 'aECEB~wxo;Bg';                       //SMTP password         //Enable implicit TLS encryption
-            $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+            $mail->SMTPSecure = "ssl";
+            $mail->Username   = $_ENV['MAIL_ACCOUNT'];
+            $mail->Password   = $_ENV['MAIL_PASSWORD'];
+            $mail->Port       = $_ENV['GMAIL_PORT'];
 
             //Recipients
             $mail->setFrom($correo, 'Cliente');
-            $mail->addAddress('hola@nexocash.pe', 'Nexo Cash');     //Add a recipient
+            $mail->addAddress($_ENV['MAIL_ACCOUNT'], 'Nexo Cash');
 
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML

@@ -6,7 +6,6 @@ if (isset($_SESSION["Id"])) {
 
 ?>
 
-
     <?php include './header.php' ?>
 
     <?php include './sidebar.php' ?>

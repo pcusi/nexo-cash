@@ -51,7 +51,7 @@
                     <div class="item">
                         <div class="form-group">
                             <label for="inversion" class="input-label">Inversión</label>
-                            <input type="text" name="Inversion" id="inversion" class="input-text" placeholder="Ingresa el monto de tu inversión" required>
+                            <input type="number" min="20001" max="999999" name="Inversion" id="inversion" class="input-text" placeholder="Ingresa el monto de tu inversión" required>
                         </div>
                     </div>
                     <div class="item">
