@@ -20,7 +20,7 @@ $sql = "INSERT INTO Prestamo
             (Correo, Dni, Telefono, Motivo, TipoMonto, Monto, InscritoEn, TipoIngreso,
             Ingreso, TipoPropiedad, ValorPropiedad, UbicacionPropiedad) 
             VALUES ('$correo', '$dni', '$telefono', $motivo, $tipomonto, $monto, $inscritoen,
-            $tipoingreso, $ingreso, $tipopropiedad, $valorpropiedad, $ubicacionpropiedad)";
+            $tipoingreso, $ingreso, $tipopropiedad, $valorpropiedad, '$ubicacionpropiedad')";
 
 $query = mysqli_query($conn, $sql);
 
